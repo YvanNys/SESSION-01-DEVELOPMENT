@@ -98,7 +98,7 @@ options {
         scannerHome='/opt/sonar-scanner'
     }
             steps{
-                withSonarQubeEnv('Sonar') {
+                withSonarQubeEnv('sonar') {
                     sh "${scannerHome}/bin/sonar-scanner"
                 }
             }
